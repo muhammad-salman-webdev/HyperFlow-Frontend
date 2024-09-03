@@ -1,0 +1,74 @@
+/* Importing Fonts */
+@import url('./font.css');
+
+/* Resetting the Browser Rendered by-default Styles */
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Reusable Variables */
+:root {}
+
+/* Section Wise CSS */
+/*   */
+/*   */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/*   */
+/*   */
+/*   */
+/* BreadCumbs Section CSS Starts Here */
+.breadcumbs_container {
+    max-width: 1440px;
+    padding: 10px 30px;
+    margin: 0 auto;
+
+    &>p {
+        font-family: 'Inter';
+        font-size: 10.4px;
+        font-weight: 400;
+        line-height: 15.5px;
+        letter-spacing: 0.414px;
+        color: #161719;
+    }
+}
+
+/* BreadCumbs Section CSS Ends Here */
+/*   */
+/*   */
+/*   */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/*   */
+/*   */
+/*   */
+/* Hero Section CSS Starts Here */
+.hero_section {
+    .hero_container {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/* Hero Section CSS Ends Here */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
