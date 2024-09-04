@@ -3,13 +3,16 @@
 
 /* Resetting the Browser Rendered by-default Styles */
 *,
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+ul,
+li,
+a,
+p,
 span {
     margin: 0;
     padding: 0;
@@ -17,11 +20,127 @@ span {
     list-style: none;
     text-decoration: none;
     outline: none;
+    font-family: 'Inter';
+}
+
+._btn {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+    padding: 12px 40px 12px 50px;
+    border: 2px solid #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    color: #FFFFFF;
+    background: #121212;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+
+    &>* {
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #5D5F68;
+        background-size: 200%;
+        transition: .5s ease-out;
+        content: '';
+        left: -1px;
+        top: -1px;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        transform: scale(0, 1);
+        transform-origin: left;
+    }
+
+    &:hover {
+        color: #FFFFFF;
+
+        &::before {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+/*  */
+._btn.btn_light {
+    border: 2px solid #121212;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: #121212;
+    background: #ffffff;
+
+    &:hover {
+        /* border: 2px solid #ffffff; */
+    }
+
+    /* border: none; */
+    &::before {
+        background: #DFE0E4;
+    }
 }
 
 /* Reusable Variables */
 :root {}
 
+/*  */
+/*  */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* Reusable Classes */
+.play-pause-btn {
+    width: 36px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    background: #141414;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    i {
+        position: absolute;
+        color: #ECECF0;
+        opacity: 1;
+        font-size: 18px;
+    }
+
+    i.fa-play {
+        opacity: 0;
+        margin-left: 2px;
+    }
+
+    &.paused {
+        i.fa-pause {
+            opacity: 0;
+        }
+
+        i.fa-play {
+            opacity: 1;
+        }
+    }
+}
+
+/* Reusable Classes */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/*  */
+/*  */
 /* Section Wise CSS */
 /*   */
 /*   */
@@ -36,10 +155,9 @@ span {
 .breadcumbs_container {
     max-width: 1440px;
     padding: 10px 30px;
-    margin: 0 auto;
+    margin: 10px auto 50px;
 
     &>p {
-        font-family: 'Inter';
         font-size: 10.4px;
         font-weight: 400;
         line-height: 15.5px;
@@ -64,6 +182,76 @@ span {
     .hero_container {
         width: 100%;
         height: 100px;
+        display: grid;
+        grid-template-columns: minmax(auto, 660px) minmax(auto, 480px);
+        justify-content: space-between;
+
+        /* Hero Content */
+        .hero_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #000000;
+
+            h6 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20.8px;
+                letter-spacing: 0.47999998927116394px;
+            }
+
+            h1 {
+                font-size: 63px;
+                font-weight: 400;
+                line-height: 72px;
+                letter-spacing: -1.440000057220459px;
+                margin: 32px 0 20px;
+            }
+
+            p {
+                font-size: 16.88px;
+                font-weight: 300;
+                line-height: 25.2px;
+                max-width: 440px;
+            }
+
+            .btns {
+                margin: 40px 0 0;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+
+        /* Hero Video */
+        .hero_video_container {
+            width: 480px;
+            max-width: 480px;
+            position: relative;
+
+            .hero_video_body {
+                width: 100%;
+
+                video {
+                    width: 100%;
+                    display: flex;
+                }
+
+                .play-pause-btn {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 1;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    .play-pause-btn {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }
 
