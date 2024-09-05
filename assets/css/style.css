@@ -547,7 +547,7 @@ span {
 /*   */
 /* Quick Pricing Section CSS Starts Here */
 .quick_pricing_section {
-    padding: 130px 0;
+    margin: 130px 0 140px;
 
     .quick_pricing_container {
         max-width: 1350px;
@@ -647,6 +647,219 @@ span {
 }
 
 /* Quick Pricing Section CSS Ends Here */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/*   */
+/*   */
+/*   */
+/* How it works Section CSS Starts Here */
+.workflow_section {
+    background: #3CDEF4;
+    padding: 190px 0 90px;
+
+    .workflow_container {
+        position: relative;
+
+        /* Floating Vectors */
+        .curly_spring {
+            position: absolute;
+            width: 260px;
+            left: -170px;
+            top: -130px;
+        }
+
+        .paper_flower {
+            position: absolute;
+            width: 175px;
+            right: 0;
+            top: -80px;
+        }
+
+        .paper_vector {
+            position: absolute;
+            width: 225px;
+            top: -70px;
+            right: -40px;
+        }
+
+        .headings {
+            text-align: center;
+
+            span {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #000000;
+            }
+
+            h1 {
+                font-size: 63px;
+                font-weight: 400;
+                line-height: 81px;
+                letter-spacing: -1.7999999523162842px;
+                color: #202124;
+                margin: 20px 0;
+            }
+
+            div {
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 31.2px;
+                    letter-spacing: 0.25px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+        }
+
+        .steps-container {
+            height: 360px;
+            display: flex;
+            align-items: center;
+            background: #FF90E8;
+            border-radius: 500px;
+            border: 2px solid #000000;
+            justify-content: space-evenly;
+            position: relative;
+            padding: 50px;
+            margin: 90px 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 34px;
+                border: inherit;
+                border-radius: inherit;
+            }
+
+            .step {
+                width: 160px;
+
+                .img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(1)::after,
+                h6 {
+                    position: absolute;
+                    top: 17.5px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: normal;
+                    color: #000000;
+                    background: #FF90E8;
+                    padding: 6px 45px 6px 25px;
+                    min-width: max-content;
+                }
+
+                &:nth-child(1)::before,
+                h6::before {
+                    content: '';
+                    width: 15px;
+                    height: 21px;
+                    background: url(../images/icons/arrow-right-vector.png);
+                    background-size: auto 20px;
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    top: 0;
+                }
+
+                &:nth-child(1)::before {
+                    left: 200px;
+                    top: 24.5px;
+                }
+
+                &:nth-child(1)::after {
+                    content: 'View Services';
+                    top: 17px;
+                    bottom: unset;
+                    left: 211px;
+                }
+
+                h6 {
+                    left: 0;
+
+                    &::before {
+                        left: -11px;
+                        top: 7px;
+                    }
+                }
+
+                &:nth-child(1) h6 {
+                    left: 445px;
+                }
+
+                &:nth-child(2) h6 {
+                    left: 640px;
+                }
+
+                &:nth-child(3) h6 {
+                    top: unset;
+                    bottom: 18px;
+                    left: unset;
+                    right: 250px;
+                    padding: 6px 35px 6px 30px;
+
+                    &::before {
+                        left: unset;
+                        right: -10px;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &:nth-child(4) h6 {
+                    top: unset;
+                    bottom: 18px;
+                    left: 200px;
+                    padding: 6px 35px 6px 30px;
+
+                    span {
+                        display: none;
+                    }
+
+                    &::before {
+                        left: unset;
+                        right: -10px;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .quality-checkmarks {
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    i {
+                        color: #2468FF;
+                        font-size: 16px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 27px;
+                        color: #0B0B0B;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* How it works Section CSS Ends Here */
 /* ############################ */
 /* ############################ */
 /* ############################ */
