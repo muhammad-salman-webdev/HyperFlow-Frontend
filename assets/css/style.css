@@ -332,8 +332,6 @@ span {
         width: 100%;
 
         ul {
-            /* animation-fill-mode: forwards;
-            animation-iteration-count: infinite; */
             display: flex;
             width: calc(9* 320px);
             overflow: visible;
@@ -398,6 +396,139 @@ span {
 }
 
 /* Services Cards Animation Section CSS Ends Here */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/*   */
+/*   */
+/*   */
+/* Advantages Section Toggle box Section CSS Starts Here */
+.new_ad_section {
+    background: #000000;
+    padding: 140px 0 120px;
+
+    .new_add_container {
+        max-width: 1240px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .text-content {
+            display: flex;
+            align-items: center;
+
+            &>div {
+                width: 430px;
+
+                &>div {
+                    position: relative;
+                    display: flex;
+
+                    h6 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        letter-spacing: 0.2160000056028366px;
+                        color: #00FF84;
+                    }
+
+                    img {
+                        width: 42px;
+                        transform: translate(6px, -33px) rotate(-4deg);
+                    }
+                }
+
+                h2 {
+                    font-size: 50px;
+                    font-weight: 400;
+                    line-height: 52px;
+                    letter-spacing: -1.2000000476837158px;
+                    color: #FEFEFE;
+                    margin: 7px 0 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: 0.25px;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .toggle-boxs-container {
+            width: 600px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .toggle-box {
+                background: white;
+                color: #000000;
+                padding: 30px 40px;
+                border: 2px solid #B9BBC1;
+                box-shadow: 6px 6px 0px 0px #000000;
+                border-radius: 6px;
+
+                .label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+
+                    h3 {
+                        font-size: 21px;
+                        font-weight: 600;
+                        line-height: 27.6px;
+                    }
+
+                    i {
+                        font-size: 22px;
+                        transition: all .3s ease;
+                        transform: rotate(0);
+                    }
+                }
+
+                .desc {
+                    display: grid;
+                    grid-template-rows: 0fr;
+                    overflow: hidden;
+                    transition: grid-template-rows .3s ease;
+
+                    &>div {
+                        min-height: 0;
+
+                        p {
+                            padding-top: 20px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 25.6px;
+                        }
+                    }
+                }
+
+                &.active {
+                    .label {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .desc {
+                        grid-template-rows: 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Advantages Section Toggle box Section CSS Ends Here */
 /* ############################ */
 /* ############################ */
 /* ############################ */
