@@ -14,3 +14,17 @@ heroVideoBtn.addEventListener("click", () => {
     heroVideo.play();
   }
 });
+
+// Animated Services Cards Play/Pause Functionality
+
+const servicesCardsElem = document.querySelector(
+  ".services_cards_a_container > ul"
+);
+const servicesCardsAnimBtn = document.querySelector(
+  ".services_cards_a_container > .play-pause-btn"
+);
+
+servicesCardsAnimBtn.addEventListener("click", () => {
+  servicesCardsAnimBtn.classList.toggle("paused");
+  servicesCardsElem.classList.toggle("paused");
+});

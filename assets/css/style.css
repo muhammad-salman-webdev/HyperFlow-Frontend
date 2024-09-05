@@ -307,3 +307,98 @@ span {
 /* ############################ */
 /* ############################ */
 /* ############################ */
+/*   */
+/*   */
+/*   */
+/* Services Cards Animation Section CSS Starts Here */
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(calc(100%) * -1));
+    }
+}
+
+.services_cards_a_section {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+
+    .services_cards_a_container {
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+
+        ul {
+            /* animation-fill-mode: forwards;
+            animation-iteration-count: infinite; */
+            display: flex;
+            width: calc(9* 320px);
+            overflow: visible;
+            animation: scrollAnimation 72000ms linear infinite;
+
+            &.paused {
+                animation-play-state: paused;
+            }
+
+            li {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                min-width: 320px;
+                height: 400;
+                overflow: hidden;
+                color: #FFFFFF;
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                    height: 200px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+                    font-size: 27.78px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    padding: 52px 50px 0 22px;
+                }
+
+                div {
+                    height: 200px;
+                    width: 100%;
+                    bottom: 0;
+                    position: absolute;
+                    background: linear-gradient(0deg, #0C0C0D 0%, rgba(20, 20, 21, 0) 100%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    padding: 20px 24px;
+
+                    p {
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .play-pause-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Services Cards Animation Section CSS Ends Here */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
