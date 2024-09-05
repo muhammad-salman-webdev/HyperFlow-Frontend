@@ -44,7 +44,7 @@ span {
     justify-content: center;
     gap: 20px;
     width: max-content;
-    padding: 12px 60px 12px 70px;
+    padding: 12px 60px;
     border: 2px solid #FFFFFF;
     position: relative;
     overflow: hidden;
@@ -53,6 +53,7 @@ span {
     border-radius: 5px;
     box-shadow: none;
     outline: none;
+    transition: all .3s ease;
 
     &>* {
         position: relative;
@@ -88,6 +89,10 @@ span {
         padding-bottom: 11px;
         color: #121212;
         background: #ffffff;
+
+        &:hover {
+            border-color: #DFE0E4;
+        }
 
         &::before {
             background: #DFE0E4;
@@ -213,6 +218,10 @@ span {
                 display: flex;
                 align-items: center;
                 gap: 30px;
+
+                ._btn {
+                    padding: 12px 60px 12px 70px;
+                }
             }
         }
 
@@ -529,6 +538,115 @@ span {
 }
 
 /* Advantages Section Toggle box Section CSS Ends Here */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/*   */
+/*   */
+/*   */
+/* Quick Pricing Section CSS Starts Here */
+.quick_pricing_section {
+    padding: 130px 0;
+
+    .quick_pricing_container {
+        max-width: 1350px;
+        width: 100%;
+
+        .heading {
+            h3 {
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 50px;
+                text-align: center;
+                color: #1B1E23;
+            }
+
+            p {
+                font-size: 18.91px;
+                font-weight: 500;
+                line-height: 32px;
+                text-align: center;
+                max-width: 870px;
+                margin: 15px auto 0;
+                color: #3E4B5B;
+            }
+        }
+
+        .pricing_cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            margin-top: 100px;
+
+            .pricing_card {
+                width: 100%;
+
+                .pricing_card_m {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    h4 {
+                        font-size: 29.75px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        color: #1B1E23;
+                    }
+
+                    .old-price {
+                        font-size: 18.28px;
+                        font-weight: 600;
+                        line-height: 32px;
+                        color: #A0B0C0;
+                        text-decoration: line-through;
+                        display: block;
+                        margin: 10px 0;
+                    }
+
+                    h2 {
+                        font-size: 39.75px;
+                        font-weight: 700;
+                        line-height: 59px;
+                        color: #6E00F2;
+
+                        span {
+                            font-size: 20px;
+                            margin-left: -5px;
+                        }
+                    }
+
+                    .per-m-save {
+                        font-size: 13.02px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #1B1E23;
+                    }
+
+                    p {
+                        font-size: 15.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: #3E4B5B;
+                        max-width: 315px;
+                        margin: 32px auto 50px;
+                    }
+
+                    .currency-res {
+                        font-size: 13.13px;
+                        font-weight: 500;
+                        line-height: 18px;
+                        color: #667B99;
+                        margin-top: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Quick Pricing Section CSS Ends Here */
 /* ############################ */
 /* ############################ */
 /* ############################ */
