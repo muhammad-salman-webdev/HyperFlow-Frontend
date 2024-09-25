@@ -1,10 +1,6 @@
 // Hero Section Video Play/Pause Btn Functionality
-const heroVideo = document.querySelector(
-  ".hero_section .hero_video_container video"
-);
-const heroVideoBtn = document.querySelector(
-  ".hero_section .hero_video_container .play-pause-btn"
-);
+const heroVideo = document.getElementById("pd_hero_video");
+const heroVideoBtn = document.getElementById("pd_hero_video_btn");
 
 heroVideoBtn.addEventListener("click", () => {
   heroVideoBtn.classList.toggle("paused");
